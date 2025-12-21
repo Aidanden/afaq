@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #001C71;
+  --primary: #001C71;
+  --secondary: #00AEEF;
+  --accent: #F8FAFC;
+  --muted: #64748b;
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --border: rgba(0, 28, 113, 0.1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ffffff;
+    --primary: #38bdf8;
+    --secondary: #0ea5e9;
+    --accent: #111111;
+    --card-bg: rgba(20, 20, 20, 0.7);
+    --border: rgba(255, 255, 255, 0.1);
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  letter-spacing: -0.02em;
+}
+
+.glass-morphism {
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #001C71 0%, #00AEEF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .text-gradient {
+  background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-mask {
+  mix-blend-mode: multiply;
+}
+
+.dark .logo-mask {
+  filter: invert(1) brightness(2) contrast(1.2);
+  mix-blend-mode: screen;
+}
+
+.premium-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.apple-button {
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.apple-button:active {
+  transform: scale(0.96);
+}
+
+.clean-logo {
+  mix-blend-mode: multiply;
+  filter: contrast(1.1) brightness(1.05);
+}
+
+.dark .clean-logo {
+  mix-blend-mode: screen;
+  filter: invert(1) brightness(2) contrast(1.1);
+}
