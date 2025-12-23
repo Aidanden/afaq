@@ -26,22 +26,14 @@ export default function Navbar() {
                         <Link href="/" className="flex items-center space-x-5 group">
                             <div className="relative overflow-hidden rounded-2xl p-1 inline-block transition-all duration-500 group-hover:scale-110">
                                 <Image
-                                    src="/logo.jpg"
+                                    src="/images/AFN-LOGO-text1.png"
                                     alt="AFN Logo"
-                                    width={140}
-                                    height={140}
-                                    className="w-auto h-12 object-contain logo-mask transition-all duration-500"
+                                    width={150}
+                                    height={50}
+                                    className="w-auto h-12 object-contain transition-all duration-500"
                                 />
                             </div>
-                            <div className="flex flex-col -space-y-1.5">
-                                <span className="text-2xl font-[1000] tracking-[-0.04em] text-primary dark:text-white uppercase leading-none">
-                                    Afaq
-                                </span>
-                                <span className="text-[11px] font-black tracking-[0.45em] text-secondary dark:text-secondary opacity-90 uppercase leading-none pl-0.5">
-                                    Al-Namaa
-                                </span>
-                                <div className="h-[2px] w-0 bg-secondary group-hover:w-full transition-all duration-500 mt-1" />
-                            </div>
+
                         </Link>
                     </div>
 
