@@ -2,13 +2,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #001C71;
-  --primary: #001C71;
+  --foreground: #1D1D1B;
+  --primary: #1E1D59;
   --secondary: #00AEEF;
   --accent: #F8FAFC;
   --muted: #64748b;
   --card-bg: rgba(255, 255, 255, 0.7);
-  --border: rgba(0, 28, 113, 0.1);
+  --border: rgba(30, 29, 89, 0.1);
 }
 
 @theme inline {
@@ -53,7 +53,7 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #001C71 0%, #00AEEF 100%);
+  background: linear-gradient(135deg, #1E1D59 0%, #00AEEF 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

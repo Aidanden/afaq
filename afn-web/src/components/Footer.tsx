@@ -1,17 +1,21 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
 export default function Footer() {
     return (
         <footer className="bg-white dark:bg-black text-slate-900 dark:text-white py-24 pb-12 border-t border-slate-100 dark:border-white/5">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
                     <div className="col-span-1 md:col-span-1">
-                        <div className="flex flex-col -space-y-1 mb-6">
-                            <span className="text-2xl font-black tracking-tighter text-primary dark:text-white uppercase">
-                                Afaq
-                            </span>
-                            <span className="text-[12px] font-bold tracking-[0.3em] text-secondary opacity-80 uppercase">
-                                Al-Namaa
-                            </span>
-                        </div>
+                        <Link href="/" className="inline-block mb-6">
+                            <Image
+                                src="/images/AFN-LOGO-text1.png"
+                                alt="Afaq Al-Namaa Logo"
+                                width={160}
+                                height={60}
+                                className="w-auto h-14 object-contain"
+                            />
+                        </Link>
                         <p className="text-slate-500 font-medium leading-relaxed max-w-xs">
                             Pioneering information technology and smart systems for a better digital future in Libya.
                         </p>
